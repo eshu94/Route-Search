@@ -57,8 +57,7 @@ struct RouteListView: View {
                                         self.searchedLongitude = coordinate.longitude
                                         currentRouteLoc.updateSearchedLoc(searchedLatitude: self.searchedLatitude, searchedLongitude: self.searchedLongitude)
                                         self.locDidUpdated = true
-                                        //self.locDeafult = false
-                                        
+
                                         if(routes.isEmpty){
                                             print("1st Obj")
                                             saveRoutes(routeTitle: completionResult.title)
@@ -119,7 +118,8 @@ struct RouteListView: View {
                             self.savedRoutesView = true
                         }) {
                             Text("Saved")
-                        }.background(NavigationLink(destination: SavedRoutesView(),
+                        }.background(NavigationLink(destination: SavedRoutesView()
+                                                        .navigationTitle("Saved Routes"),
                                                     isActive: $savedRoutesView){})
                     }
                 }

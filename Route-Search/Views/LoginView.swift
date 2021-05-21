@@ -26,8 +26,6 @@ struct LoginView: View {
         
         self.defaultEmail = email
         self.defaultPassword = password
-        print(self.defaultEmail)
-        print(self.defaultPassword)
     }
   
     
