@@ -14,13 +14,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-
-        // Get the managed object context from the shared persistent container.
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
+        UserDefaults.standard.set("abc@quin.design", forKey: "defaultUserEmail")
+        UserDefaults.standard.set("Quin123", forKey: "defaultUserPassword")
         let loginScreenView = LoginView().environment(\.managedObjectContext, context)
         let routeListScreenView = RouteListView().environment(\.managedObjectContext,context)
         let data = UserDefaults.standard.bool(forKey: "loginActive")
