@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1D18322657704B00092910 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D18312657704B00092910 /* LocationManager.swift */; };
+		6F1D18352657709600092910 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D18342657709600092910 /* Coordinator.swift */; };
+		6F1D1838265770CF00092910 /* CurrentRouteLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D1837265770CF00092910 /* CurrentRouteLocation.swift */; };
+		6F1D183B2657710E00092910 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D183A2657710E00092910 /* MapView.swift */; };
+		6F1D183E265771C000092910 /* MapRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D183D265771C000092910 /* MapRouteView.swift */; };
+		6F1D18412657720900092910 /* SavedRoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D18402657720900092910 /* SavedRoutesView.swift */; };
 		6F946D4D2653BD5200F988CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F946D4C2653BD5200F988CF /* AppDelegate.swift */; };
 		6F946D4F2653BD5200F988CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F946D4E2653BD5200F988CF /* SceneDelegate.swift */; };
 		6F946D512653BD5200F988CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F946D502653BD5200F988CF /* ContentView.swift */; };
@@ -20,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F1D18312657704B00092910 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		6F1D18342657709600092910 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6F1D1837265770CF00092910 /* CurrentRouteLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRouteLocation.swift; sourceTree = "<group>"; };
+		6F1D183A2657710E00092910 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		6F1D183D265771C000092910 /* MapRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouteView.swift; sourceTree = "<group>"; };
+		6F1D18402657720900092910 /* SavedRoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRoutesView.swift; sourceTree = "<group>"; };
 		6F946D492653BD5200F988CF /* Route-Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Route-Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F946D4C2653BD5200F988CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F946D4E2653BD5200F988CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +103,9 @@
 				6F946D502653BD5200F988CF /* ContentView.swift */,
 				6F946D652653BD9700F988CF /* LoginView.swift */,
 				6F946D702654DDA300F988CF /* RouteListView.swift */,
+				6F1D183A2657710E00092910 /* MapView.swift */,
+				6F1D183D265771C000092910 /* MapRouteView.swift */,
+				6F1D18402657720900092910 /* SavedRoutesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -99,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				6F946D742654E0D200F988CF /* LocationService.swift */,
+				6F1D18312657704B00092910 /* LocationManager.swift */,
+				6F1D18342657709600092910 /* Coordinator.swift */,
+				6F1D1837265770CF00092910 /* CurrentRouteLocation.swift */,
 			);
 			path = LocationFiles;
 			sourceTree = "<group>";
@@ -174,12 +192,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F946D752654E0D200F988CF /* LocationService.swift in Sources */,
+				6F1D183E265771C000092910 /* MapRouteView.swift in Sources */,
 				6F946D4D2653BD5200F988CF /* AppDelegate.swift in Sources */,
 				6F946D542653BD5200F988CF /* Route_Search.xcdatamodeld in Sources */,
+				6F1D183B2657710E00092910 /* MapView.swift in Sources */,
 				6F946D4F2653BD5200F988CF /* SceneDelegate.swift in Sources */,
+				6F1D18322657704B00092910 /* LocationManager.swift in Sources */,
 				6F946D662653BD9700F988CF /* LoginView.swift in Sources */,
+				6F1D1838265770CF00092910 /* CurrentRouteLocation.swift in Sources */,
 				6F946D712654DDA300F988CF /* RouteListView.swift in Sources */,
 				6F946D512653BD5200F988CF /* ContentView.swift in Sources */,
+				6F1D18412657720900092910 /* SavedRoutesView.swift in Sources */,
+				6F1D18352657709600092910 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
